@@ -67,12 +67,39 @@ header nav ul li a:hover {
 
 .about-me {
   background-color: var(--tertiary-color);
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 48px;
+  color: antiquewhite;
+  border-bottom: 3px solid black;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 100%;
 }
 
 .about-me img {
-  width: 33%;
   overflow: auto;
+  margin: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-bio {
+  flex: 1;
+  margin: 50px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-bio h2 {
+  text-align: center;
 }
 
 .my-work {
