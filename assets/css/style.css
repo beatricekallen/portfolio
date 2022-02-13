@@ -109,20 +109,16 @@ header nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-me-bio h2 {
-  text-align: center;
-}
-
 .my-work {
   background-color: var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .top-project {
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
 }
 
 .first-project {
@@ -130,10 +126,9 @@ header nav ul li a:hover {
   height: 500px;
   flex: 1;
   align-items: center;
-  background-image: url("../images/first-project-image.jpg");
+  background-image: url("../images/project-1-image.tif");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-position: 80%;
   border-radius: 15px;
 }
@@ -143,22 +138,56 @@ header nav ul li a:hover {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .small-project {
   flex: 1;
-  justify-content: space-between;
   margin: 50px;
   padding: 50px;
   height: 250px;
   width: 300px;
-  background-image: url("../images/first-project-image.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
   border-radius: 5px;
   position: relative;
+}
+
+.small-project img {
+  object-fit: cover;
+  width: 100%;
+  overflow: auto;
+  padding: 5;
+}
+
+.background-two {
+  background-image: url("../images/project-2-image.jpg");
+  background-size: cover;
+  width: 100%;
+  overflow: auto;
+  padding: 5;
+}
+
+.background-three {
+  background-image: url("../images/project-3-image.jpg");
+  background-size: cover;
+  width: 100%;
+  overflow: auto;
+  padding: 5;
+}
+
+.background-four {
+  background-image: url("../images/project-4-image.jpg");
+  background-size: cover;
+  width: 100%;
+  overflow: auto;
+  padding: 5;
+}
+
+.background-five {
+  background-image: url("../images/project-5-image.jpg");
+  background-size: cover;
+  width: 100%;
+  overflow: auto;
+  padding: 5;
 }
 
 .first-project-button {
@@ -174,6 +203,7 @@ header nav ul li a:hover {
   top: 80%;
   left: 3%;
   text-align: center;
+  z-index: 9998;
 }
 
 .small-project-button {
@@ -189,6 +219,7 @@ header nav ul li a:hover {
   top: 80%;
   left: 50%;
   text-align: center;
+  z-index: 9998;
 }
 
 .first-project-button:hover {
@@ -198,3 +229,7 @@ header nav ul li a:hover {
 .small-project-button:hover {
   transform: scale(1.1);
 }
+
+/* .project-2-image {
+  background-image: url("../images/project-2-image.jpg");
+} */
