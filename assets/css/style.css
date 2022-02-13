@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   color: var(--primary-color);
 }
 
@@ -29,6 +29,11 @@ header {
   background-position: center;
   background-attachment: fixed;
   background-position: 80%;
+  z-index: 9999;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header h1 {
@@ -89,12 +94,18 @@ header nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.about-me p {
+  color: var(--secondary-color);
+  margin: 5px 0 15px 0;
+  line-height: 1.3;
+}
+
 .about-me-bio {
   flex: 1;
   margin: 50px;
   border: 2px solid var(--secondary-color);
   border-radius: 15px;
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,6 +122,7 @@ header nav ul li a:hover {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .first-project {
@@ -123,15 +135,6 @@ header nav ul li a:hover {
   background-position: center;
   background-attachment: fixed;
   background-position: 80%;
-}
-.first-project h3 {
-  color: antiquewhite;
-  font-size: 36px;
-  border: solid 2px var(--secondary-color);
-  padding-bottom: 10px;
-  width: 10%;
-  margin: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 
@@ -154,4 +157,44 @@ header nav ul li a:hover {
   background-position: center;
   background-attachment: fixed;
   background-position: 80%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.first-project-button {
+  color: var(--primary-color);
+  font-size: 48px;
+  padding: 10px;
+  width: 25%;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(250, 235, 215, 0.8);
+  position: relative;
+  top: 80%;
+  left: 3%;
+  text-align: center;
+}
+
+.small-project-button {
+  color: var(--primary-color);
+  font-size: 36px;
+  padding: 10px;
+  width: 50%;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(250, 235, 215, 0.8);
+  position: relative;
+  top: 80%;
+  left: 50%;
+  text-align: center;
+}
+
+.first-project-button:hover {
+  transform: scale(1.1);
+}
+
+.small-project-button:hover {
+  transform: scale(1.1);
 }
