@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #4287f5;
+  --primary-color: #b1b5bd;
   --secondary-color: #04214f;
   --tertiary-color: #94b2e3;
 }
@@ -71,7 +71,7 @@ header nav ul li a:hover {
 }
 
 .about-me {
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,7 +79,7 @@ header nav ul li a:hover {
 
 .section-title {
   font-size: 48px;
-  color: antiquewhite;
+  color: var(--secondary-color);
   border-bottom: 3px solid black;
   padding: 20px;
   text-align: center;
@@ -105,7 +105,7 @@ header nav ul li a:hover {
   margin: 50px;
   border: 2px solid var(--secondary-color);
   border-radius: 15px;
-  background-color: rgba(250, 235, 215, 0.8);
+  background-color: rgba(250, 235, 215, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -151,13 +151,6 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.small-project img {
-  object-fit: cover;
-  width: 100%;
-  overflow: auto;
-  padding: 5;
-}
-
 .background-two {
   background-image: url("../images/project-2-image.jpg");
   background-size: cover;
@@ -191,7 +184,7 @@ header nav ul li a:hover {
 }
 
 .first-project-button {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 48px;
   padding: 10px;
   width: 25%;
@@ -207,7 +200,7 @@ header nav ul li a:hover {
 }
 
 .small-project-button {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 36px;
   padding: 10px;
   width: 50%;
@@ -230,6 +223,22 @@ header nav ul li a:hover {
   transform: scale(1.1);
 }
 
-/* .project-2-image {
-  background-image: url("../images/project-2-image.jpg");
-} */
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-info {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
