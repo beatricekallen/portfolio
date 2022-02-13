@@ -79,13 +79,17 @@ header nav ul li a:hover {
   background-color: var(--secondary-color);
 }
 
-.first-project {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  height: 500px;
-  width: 80%;
+.top-project {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.first-project {
+  margin: 50px;
+  height: 500px;
+  flex: 1;
   align-items: center;
   background-image: url("../images/first-project-image.jpg");
   background-size: cover;
@@ -105,17 +109,22 @@ header nav ul li a:hover {
 }
 
 .small-projects {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  height: 250px;
-  width: 30%;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+.small-project {
+  flex: 1;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 50px;
+  height: 250px;
+  width: 300px;
   background-image: url("../images/first-project-image.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-position: 80%;
-  flex: 1;
 }
