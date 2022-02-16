@@ -95,6 +95,7 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 20%;
 }
 
 .section-title {
@@ -104,7 +105,7 @@ header nav ul li a:hover {
   padding: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
-  width: 100%;
+  width: 50%;
   text-shadow: 0 0 10px rgba(223, 216, 216, 0.301);
 }
 
@@ -113,6 +114,7 @@ header nav ul li a:hover {
   margin: 50px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(252, 251, 251, 0.363);
+  /* height: 40vh; */
 }
 
 .about-me p {
@@ -263,6 +265,12 @@ header nav ul li a:hover {
   text-align: center;
   margin: 10px;
   padding: 10px;
+}
+
+.top-project a,
+.small-projects a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .contact a {
