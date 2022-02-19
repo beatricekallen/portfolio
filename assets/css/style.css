@@ -1,18 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-a:visited {
-  text-decoration: none;
-  color: var(--primary-color);
 }
 
 :root {
   --primary-color: #eedcc2;
   --secondary-color: #00040a;
   --tertiary-color: #94b2e3;
+  --white-text-shadow: 0 0 10px rgba(245, 242, 242, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 body {
@@ -25,21 +29,12 @@ header {
   padding: 20px 35px;
   background-color: var(--secondary-color);
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  /* background-image: url("../images/header-image.jpg"); */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
   z-index: 9999;
-}
-
-header a {
-  text-decoration: none;
 }
 
 header h1 {
@@ -47,7 +42,7 @@ header h1 {
   font-size: 40px;
   color: var(--primary-color);
   margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  text-shadow: var(--white-text-shadow);
 }
 
 header nav {
@@ -66,13 +61,13 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 2vw;
-  text-shadow: 0 0 10px rgba(223, 216, 216, 0.301);
+  text-shadow: var(--white-text-shadow);
 }
 
 header nav ul li a:hover {
-  background: var(--secondary-color);
-  color: antiquewhite;
-  border-radius: 15px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
   text-shadow: none;
 }
 
@@ -87,7 +82,7 @@ header nav ul li a:hover {
   padding: 300px 10px 10px 100px;
   font-size: 60px;
   text-align: right;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  text-shadow: var(--white-text-shadow);
 }
 
 .about-me {
@@ -106,7 +101,7 @@ header nav ul li a:hover {
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-  text-shadow: 0 0 10px rgba(223, 216, 216, 0.301);
+  text-shadow: var(--white-text-shadow);
 }
 
 .about-me img {
@@ -114,7 +109,6 @@ header nav ul li a:hover {
   margin: 50px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(252, 251, 251, 0.363);
-  /* height: 40vh; */
 }
 
 .about-me p {
@@ -128,15 +122,12 @@ header nav ul li a:hover {
 .about-me-bio {
   flex: 1;
   margin: 50px;
-  border: 2px solid var(--secondary-color);
   border-radius: 15px;
-  background-color: var(--secondary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: right;
 }
 
 .my-work {
-  background-color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -145,26 +136,26 @@ header nav ul li a:hover {
 .top-project {
   width: 100%;
   margin: 0 auto;
+  display: flex;
 }
 
 .first-project {
   margin: 50px;
   height: 500px;
   flex: 1;
+  flex-wrap: wrap;
   align-items: center;
   background-image: url("../images/project-1-image.jpg");
   background-size: cover;
   background-position: center;
   background-position: 80%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .small-projects {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .small-project {
@@ -180,7 +171,7 @@ header nav ul li a:hover {
 .background-two {
   background-image: url("../images/project-2-image.jpg");
   background-size: cover;
-  width: 100%;
+  width: auto;
   overflow: auto;
   padding: 5;
 }
@@ -188,7 +179,7 @@ header nav ul li a:hover {
 .background-three {
   background-image: url("../images/project-3-image.jpg");
   background-size: cover;
-  width: 100%;
+  width: auto;
   overflow: auto;
   padding: 5;
 }
@@ -196,15 +187,16 @@ header nav ul li a:hover {
 .background-four {
   background-image: url("../images/project-4-image.jpg");
   background-size: cover;
-  width: 100%;
-  overflow: auto;
+  width: auto;
+  /* overflow: auto; */
   padding: 5;
 }
 
 .background-five {
   background-image: url("../images/project-5-image.jpg");
   background-size: cover;
-  width: 100%;
+  background-position: 80%;
+  width: auto;
   overflow: auto;
   padding: 5;
 }
@@ -213,7 +205,7 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   font-size: 48px;
   padding: 10px;
-  width: 25%;
+  width: 50%;
   margin: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -261,6 +253,10 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+.contact-info:hover {
+  text-decoration: underline;
+}
+
 .footer {
   text-align: center;
   margin: 10px;
@@ -275,4 +271,54 @@ header nav ul li a:hover {
 
 .contact a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .small-projects {
+    flex-direction: column;
+  }
+
+  .background-two,
+  .background-three,
+  .background-four,
+  .background-five {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 575px) {
 }
