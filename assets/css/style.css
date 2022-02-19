@@ -232,7 +232,6 @@ header nav ul li a:hover {
   background-size: cover;
   background-position: 80%;
   width: auto;
-  overflow: auto;
   padding: 5;
 }
 
