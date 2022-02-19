@@ -68,6 +68,7 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  color: var(--primary-color);
 }
 
 header nav ul li a {
