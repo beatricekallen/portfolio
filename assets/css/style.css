@@ -210,7 +210,6 @@ header nav ul li a:hover {
   background-image: url("../images/project-2-image.jpg");
   background-size: cover;
   width: auto;
-  overflow: auto;
   padding: 5;
 }
 
@@ -218,7 +217,6 @@ header nav ul li a:hover {
   background-image: url("../images/project-3-image.jpg");
   background-size: cover;
   width: auto;
-  overflow: auto;
   padding: 5;
 }
 
@@ -289,7 +287,7 @@ header nav ul li a:hover {
   color: var(--primary-color);
 }
 
-/* media query */
+/* media queries */
 
 @media screen and (max-width: 980px) {
   header {
@@ -337,5 +335,21 @@ header nav ul li a:hover {
   .about-me img {
     min-width: 421px;
     max-height: 450px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .first-project-button {
+    font-size: 36px;
+  }
+
+  .small-project-button {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .small-project-button {
+    font-size: 24px;
   }
 }
