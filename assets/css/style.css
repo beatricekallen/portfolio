@@ -76,6 +76,7 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 2vw;
   text-shadow: var(--white-text-shadow);
+  color: var(--primary-color);
 }
 
 header nav ul li a:hover {
