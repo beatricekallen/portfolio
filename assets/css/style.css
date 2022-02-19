@@ -25,6 +25,19 @@ body {
   background-color: var(--secondary-color);
 }
 
+.section-title {
+  font-size: 48px;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+  text-shadow: var(--white-text-shadow);
+}
+
+/* header styles */
+
 header {
   padding: 20px 35px;
   background-color: var(--secondary-color);
@@ -71,6 +84,8 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
+/* hero styles */
+
 .hero {
   background-image: url("../images/hero-image.jpg");
   background-size: cover;
@@ -85,23 +100,14 @@ header nav ul li a:hover {
   text-shadow: var(--white-text-shadow);
 }
 
+/* bio section styles */
+
 .about-me {
   background-color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 20%;
-}
-
-.section-title {
-  font-size: 48px;
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
-  padding: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-  text-shadow: var(--white-text-shadow);
 }
 
 .about-me img {
@@ -127,11 +133,21 @@ header nav ul li a:hover {
   text-align: right;
 }
 
+/* my work section styles */
+
 .my-work {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
+
+.top-project a,
+.small-projects a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* marquee project styles */
 
 .top-project {
   width: 100%;
@@ -151,6 +167,28 @@ header nav ul li a:hover {
   background-position: 80%;
   border-radius: 5px;
 }
+
+.first-project-button {
+  color: var(--secondary-color);
+  font-size: 48px;
+  padding: 10px;
+  width: 50%;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(250, 235, 215, 0.8);
+  position: relative;
+  top: 80%;
+  left: 3%;
+  text-align: center;
+  z-index: 9998;
+}
+
+.first-project-button:hover {
+  transform: scale(1.1);
+}
+
+/* smaller project styles */
 
 .small-projects {
   width: 100%;
@@ -188,7 +226,6 @@ header nav ul li a:hover {
   background-image: url("../images/project-4-image.jpg");
   background-size: cover;
   width: auto;
-  /* overflow: auto; */
   padding: 5;
 }
 
@@ -199,22 +236,6 @@ header nav ul li a:hover {
   width: auto;
   overflow: auto;
   padding: 5;
-}
-
-.first-project-button {
-  color: var(--secondary-color);
-  font-size: 48px;
-  padding: 10px;
-  width: 50%;
-  margin: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background-color: rgba(250, 235, 215, 0.8);
-  position: relative;
-  top: 80%;
-  left: 3%;
-  text-align: center;
-  z-index: 9998;
 }
 
 .small-project-button {
@@ -233,13 +254,11 @@ header nav ul li a:hover {
   z-index: 9998;
 }
 
-.first-project-button:hover {
-  transform: scale(1.1);
-}
-
 .small-project-button:hover {
   transform: scale(1.1);
 }
+
+/* contact section styles */
 
 .contact {
   width: 100%;
@@ -257,21 +276,20 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* footer styles */
+
 .footer {
   text-align: center;
   margin: 10px;
   padding: 10px;
 }
 
-.top-project a,
-.small-projects a {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
 .contact a {
   text-decoration: none;
+  color: var(--primary-color);
 }
+
+/* media query */
 
 @media screen and (max-width: 980px) {
   header {
@@ -315,10 +333,9 @@ header nav ul li a:hover {
   .background-five {
     min-height: 150px;
   }
-}
 
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 575px) {
+  .about-me img {
+    min-width: 421px;
+    max-height: 450px;
+  }
 }
