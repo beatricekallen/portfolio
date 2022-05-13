@@ -209,14 +209,14 @@ header nav ul li a:hover {
 }
 
 .background-two {
-  background-image: url("../images/project-2-image.jpg");
+  background-image: url("../images/weather-dashboard-image.jpg");
   background-size: cover;
   width: auto;
   padding: 5;
 }
 
 .background-three {
-  background-image: url("../images/project-3-image.jpg");
+  background-image: url("../images/employee-tracker-image.jpg");
   background-size: cover;
   width: auto;
   padding: 5;
@@ -230,7 +230,7 @@ header nav ul li a:hover {
 }
 
 .background-five {
-  background-image: url("../images/project-1-image.jpg");
+  background-image: url("../images/team-profile-generator-image.jpg");
   background-size: cover;
   background-position: 80%;
   width: auto;
@@ -239,7 +239,7 @@ header nav ul li a:hover {
 
 .small-project-button {
   color: var(--secondary-color);
-  font-size: 36px;
+  font-size: 30px;
   padding: 10px;
   width: 50%;
   margin: 0;
